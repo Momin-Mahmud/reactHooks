@@ -9,9 +9,10 @@ export default function ValueUpdater() {
 
     return (
       <div>
-        currentValue is {currentValue}
+        <h1>UseContext</h1>
+        Current Value is {currentValue}  
         <br />
-        updateValue 
+        Update Value 
         <br />
         <input type="number" onChange={(e) => setValueEntered(e.target.value)}/>
         <button onClick={() => updateValue(valueEntered)}>Update Value</button>
